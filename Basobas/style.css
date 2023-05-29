@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --main-color: red;
+    --second-color: yellow;
+    --text-color: black;
+    --gradient: linear-gradient(red, yellow);
+}
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+section{
+    padding: 50px, 100px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: skyblue;
+    padding: 15px 100px;
+}
+.logo img{
+    width: 200px;
+    height: 120px;
+}
+.navbar{
+    display: flex;
+}
+.navbar li{
+    position: relative;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.navbar a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--gradient);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+}
+.navbar a:hover::after {
+    width: 100%;
+}
+.header-btn a {
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.header-btn .log-in {
+    background: purple;
+    color: white;
+    border-radius: 0.5rem;
+}
+.header-btn .log-in:hover {
+    background: var(--main-color);
+}
+
+
+/* CSS styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .search-section {
+    background-image: url('background.jpg');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-section h1 {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .rents-container {
+    margin: 50px;
+  }
+  
+  .rent-card {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .rent-card h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .rent-card p {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .rent-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .rent-card .apply-button {
+    background: #333;
+    color: purple;
+  }
+  
